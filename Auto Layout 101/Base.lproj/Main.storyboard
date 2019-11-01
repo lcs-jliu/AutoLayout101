@@ -157,34 +157,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rT3-EP-YB7">
-                                <rect key="frame" x="20" y="846" width="374" height="30"/>
+                                <rect key="frame" x="20" y="856" width="382" height="20"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhg-xY-Lub">
-                                        <rect key="frame" x="0.0" y="0.0" width="167" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="20"/>
                                         <state key="normal" title="Previous"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss9-nk-odB">
-                                        <rect key="frame" x="167" y="0.0" width="40" height="30"/>
+                                        <rect key="frame" x="167" y="0.0" width="40" height="20"/>
                                         <state key="normal" title="Share"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p56-BC-sF3">
-                                        <rect key="frame" x="207" y="0.0" width="167" height="30"/>
+                                        <rect key="frame" x="207" y="0.0" width="175" height="20"/>
                                         <state key="normal" title="Next"/>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="D0GQ9Jl.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tyc-Zv-Q0P">
-                                <rect key="frame" x="20" y="29" width="374" height="463"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="D0GQ9Jl.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tyc-Zv-Q0P">
+                                <rect key="frame" x="20" y="20" width="374" height="836"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Qhg-xY-Lub" firstAttribute="leading" secondItem="Ilr-3f-Ob1" secondAttribute="leadingMargin" id="1Wr-G7-yKV"/>
                             <constraint firstItem="Tyc-Zv-Q0P" firstAttribute="trailing" secondItem="Ilr-3f-Ob1" secondAttribute="trailingMargin" id="JZQ-R6-nJ0"/>
+                            <constraint firstItem="Tyc-Zv-Q0P" firstAttribute="bottom" secondItem="Ilr-3f-Ob1" secondAttribute="bottom" constant="-40" id="VAV-Z3-h6f"/>
+                            <constraint firstItem="Tyc-Zv-Q0P" firstAttribute="bottom" secondItem="rT3-EP-YB7" secondAttribute="top" id="WJa-ww-8dv"/>
                             <constraint firstItem="Ss9-nk-odB" firstAttribute="centerX" secondItem="Ilr-3f-Ob1" secondAttribute="centerX" id="WPQ-OR-7Gi"/>
                             <constraint firstItem="Tyc-Zv-Q0P" firstAttribute="leading" secondItem="Ilr-3f-Ob1" secondAttribute="leadingMargin" id="ZXV-m5-BaU"/>
+                            <constraint firstItem="Tyc-Zv-Q0P" firstAttribute="top" secondItem="Ilr-3f-Ob1" secondAttribute="top" constant="20" symbolic="YES" id="qHJ-4B-JTM"/>
                             <constraint firstAttribute="bottom" secondItem="rT3-EP-YB7" secondAttribute="bottom" constant="20" symbolic="YES" id="usg-4c-4Bm"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="p56-BC-sF3" secondAttribute="trailingMargin" constant="8" id="wdt-17-jlU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p56-BC-sF3" secondAttribute="trailingMargin" id="wdt-17-jlU"/>
                         </constraints>
                     </view>
                 </viewController>
