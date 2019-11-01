@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
-        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -157,11 +156,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rT3-EP-YB7">
-                                <rect key="frame" x="20" y="802" width="374" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="rT3-EP-YB7">
+                                <rect key="frame" x="20" y="846" width="374" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhg-xY-Lub">
-                                        <rect key="frame" x="0.0" y="0.0" width="159" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="167" height="30"/>
                                         <state key="normal" title="Previous"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ss9-nk-odB">
@@ -169,21 +168,23 @@
                                         <state key="normal" title="Share"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p56-BC-sF3">
-                                        <rect key="frame" x="215" y="0.0" width="159" height="30"/>
+                                        <rect key="frame" x="207" y="0.0" width="167" height="30"/>
                                         <state key="normal" title="Next"/>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="D0GQ9Jl.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tyc-Zv-Q0P">
-                                <rect key="frame" x="35" y="64" width="344" height="610"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="D0GQ9Jl.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Tyc-Zv-Q0P">
+                                <rect key="frame" x="20" y="29" width="374" height="463"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Tyc-Zv-Q0P" firstAttribute="centerX" secondItem="Ilr-3f-Ob1" secondAttribute="centerX" id="1Vb-9v-b94"/>
                             <constraint firstItem="Qhg-xY-Lub" firstAttribute="leading" secondItem="Ilr-3f-Ob1" secondAttribute="leadingMargin" id="1Wr-G7-yKV"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rT3-EP-YB7" secondAttribute="trailing" id="CEx-aG-nKv"/>
+                            <constraint firstItem="Tyc-Zv-Q0P" firstAttribute="trailing" secondItem="Ilr-3f-Ob1" secondAttribute="trailingMargin" id="JZQ-R6-nJ0"/>
                             <constraint firstItem="Ss9-nk-odB" firstAttribute="centerX" secondItem="Ilr-3f-Ob1" secondAttribute="centerX" id="WPQ-OR-7Gi"/>
+                            <constraint firstItem="Tyc-Zv-Q0P" firstAttribute="leading" secondItem="Ilr-3f-Ob1" secondAttribute="leadingMargin" id="ZXV-m5-BaU"/>
+                            <constraint firstAttribute="bottom" secondItem="rT3-EP-YB7" secondAttribute="bottom" constant="20" symbolic="YES" id="usg-4c-4Bm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p56-BC-sF3" secondAttribute="trailingMargin" constant="8" id="wdt-17-jlU"/>
                         </constraints>
                     </view>
                 </viewController>
